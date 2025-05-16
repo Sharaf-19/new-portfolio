@@ -44,7 +44,11 @@ const ShowcaseSection = () => {
           <div className='first-project-wrapper' ref={project1Ref}>
             <div className='image-wrapper'>
               <a href='https://lgpms.co.uk/' target='_blank'>
-                <img src='/images/LGPMS.png' alt='project-name' />
+                <img
+                  src='/images/LGPMS1.png'
+                  alt='project-name'
+                  className='w-full h-auto object-contain'
+                />
               </a>
             </div>
             <div className='text-content'>
