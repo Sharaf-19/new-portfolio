@@ -1,6 +1,6 @@
+import HeroImage from '../components/HeroModels/HeroImage';
 import AnimatedCounter from '../components/AnimatedCounter';
 import Button from '../components/Button';
-import HeroExperience from '../components/HeroModels/HeroExperience';
 import { words } from '../constants';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -27,9 +27,9 @@ const Hero = () => {
         <img src='/images/bg.png' alt='background' />
       </div>
 
-      <div className='hero-layout'>
+      <div className='hero-layout flex flex-col-reverse xl:flex-row md:flex-row items-center justify-between md:px-20 px-5 gap-10'>
         {/* left: hero content */}
-        <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
+        <header className='flex flex-col justify-center w-full md:w-1/2'>
           <div className='flex flex-col gap-7'>
             <div className='hero-text'>
               <h1>
@@ -54,14 +54,30 @@ const Hero = () => {
             <h1 className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
               Hi, I am Sharaf, a software Engineer with a passion for code.
             </h1>
-            <Button className='md:w-80 md:h-16 w-60 h-12' id='buuton' text='See my Work' />
+            <div className='flex flex-row gap-8'>
+              <Button
+                variant='primary'
+                className='md:w-80 md:h-16 w-60 h-12'
+                targetId='work'
+                text='See my Work'
+              />
+              <Button
+                variant='secondary'
+                className='md:w-80 md:h-16 w-60 h-12'
+                targetId='contact'
+                text='Contact Me'
+              />
+            </div>
           </div>
         </header>
         {/* right: 3D model */}
-        <figure>
-          <div className='hero-3d-layout'>
-            <HeroExperience />
+        <figure className='flex justify-center w-full md:w-1/2'>
+          <div className='hero-image-glow'>
+            <HeroImage />
           </div>
+          {/* <div className='hero-3d-layout'>
+            <HeroExperience />
+          </div> */}
         </figure>
       </div>
 

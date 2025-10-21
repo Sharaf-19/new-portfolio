@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import 'tailwindcss';
 
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
@@ -12,7 +12,7 @@ body {
   background-color: black;
   color: white;
   scroll-behavior: smooth;
-  font-family: "Mona Sans", sans-serif;
+  font-family: 'Mona Sans', sans-serif;
 }
 
 section {
@@ -20,7 +20,7 @@ section {
 }
 
 @theme {
-  --font-sans: "Mona Sans", sans-serif;
+  --font-sans: 'Mona Sans', sans-serif;
   --color-white-50: #d9ecff;
   --color-black-50: #1c1c21;
   --color-black-100: #0e0e10;
@@ -202,6 +202,20 @@ section {
     }
   }
 
+  .hero-image-glow {
+  @apply relative flex items-center justify-center;
+}
+.hero-image-glow::after {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  z-index: -1;
+}
+
+
   .cta-wrapper {
     @apply relative z-20 cursor-pointer;
   }
@@ -228,6 +242,30 @@ section {
         @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
       }
     }
+  }
+
+
+  /* Secondary button (opposite contrast) */
+  .cta-secondary .cta-button {
+    background-color: var(--color-white-50);
+  }
+
+  .cta-secondary .cta-button .bg-circle {
+    background-color: var(--color-black-200);
+  }
+
+  .cta-secondary .cta-button .text {
+    color: var(--color-white);
+  }
+
+  .cta-secondary .cta-button:hover .text {
+    color: black;
+  }
+
+  /* Optional: a bit more hover polish for the secondary style */
+  .cta-secondary .cta-button:hover {
+    background-color: var(--color-white-50);
+    transition: background-color 0.3s ease;
   }
 
   .card-border {
@@ -379,19 +417,11 @@ section {
 .gradient-edge:nth-of-type(1) {
   left: 0;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 .gradient-edge:nth-of-type(2) {
   right: 0;
-  background: linear-gradient(
-    -90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 /* marquee */
@@ -432,7 +462,7 @@ section {
 
 .card::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   left: 50%;
@@ -443,12 +473,7 @@ section {
   background: var(--gradient);
   background-attachment: fixed;
   mask: linear-gradient(#0000, #0000),
-    conic-gradient(
-      from calc((var(--start) - 15) * 1deg),
-      #ffffff1f 0deg,
-      white,
-      #ffffff00 100deg
-    );
+    conic-gradient(from calc((var(--start) - 15) * 1deg), #ffffff1f 0deg, white, #ffffff00 100deg);
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
   opacity: 0;
