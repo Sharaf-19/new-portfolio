@@ -52,7 +52,9 @@ const Hero = () => {
               <h1>Into Real Projects</h1>
             </div>
             <h1 className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
-              Hi, I am Sharaf, a software Engineer with a passion for code.
+              As a Full-Stack/Software engineer, I build sleek, high-performance applications designed for
+              great user experiences. I focus on speed, responsiveness, and precision — turning
+              complex ideas into simple, elegant solutions.
             </h1>
             <div className='flex flex-row gap-8'>
               <Button
