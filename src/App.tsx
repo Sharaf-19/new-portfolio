@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Contact from "./sections/Contact";
 import ExperienceSection from "./sections/ExperienceSection";
 import FeatureCards from "./sections/FeatureCards";
@@ -21,6 +22,7 @@ const App = () => {
     <TechStack />
     <Testimonials />
     <Contact />
+    <WhatsAppButton />
     <Footer />
     </>
   );
