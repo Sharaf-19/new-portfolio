@@ -96,7 +96,7 @@ const Experience = () => {
       id="experience"
       className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
     >
-      <div className="w-full h-full md:px-20 px-5">
+      <div className="w-full h-full md:px-20 px-6">
         <TitleHeader
           title="Experiences and Projects"
           sub="💼 My Career Overview"
@@ -118,7 +118,7 @@ const Experience = () => {
                       <div className="timeline" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
-                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                    <div className="expText flex xl:gap-20 md:gap-10 gap-6 relative z-20">
                       <div className="timeline-logo">
                         <img src={card.logoPath} alt="logo" />
                       </div>
