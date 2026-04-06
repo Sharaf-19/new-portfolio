@@ -118,8 +118,8 @@ const techStackImgs = [
   //   imgPath: '/images/logos/git.svg',
   // },
   {
-       name: 'Next Developer',
-       imgPath: '/images/logos/next.png',
+    name: 'Next Developer',
+    imgPath: '/images/logos/next.png',
   },
 ];
 
@@ -158,21 +158,54 @@ const techStackIcons: {
 const expCards = [
   {
     review:
-      'Sharaf brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.',
-    imgPath: '/images/Picture1.png',
-    logoPath: '/images/logo11.png',
-    title: 'Fullstack Developer (Freelancing)',
-    date: 'January 2025 - Present',
+      'Sharaf played a key role in building and scaling our logistics platform, delivering reliable backend systems and seamless user experiences.',
+    link: 'https://tramove.net/',
+    imgPath: '/images/logos/tramove-logo.png',
+    logoPath: '/images/logos/tramove-logo.png', // update with actual logo
+    title: 'Tramove Logistics - Fullstack Developer (Freelancing)',
+    date: 'December 2025 - Present',
     responsibilities: [
-      'Developed and maintained responsive, user-friendly features for the LGPMS client website using React.js and Tailwind CSS to enhance customer experience for service bookings and vehicle rentals.',
-      'Implemented an admin panel to efficiently manage bookings and daily operations.',
-      'Designed and implemented backend models and RESTful API routes using Node.js and Express.js for core features such as vehicles and bookings.',
-      'Wrote end-to-end tests using Cypress, ensuring reliability and stability of key user flows and reducing regression bugs during deployments.',
+      'Developed and maintained a scalable logistics platform enabling users to manage shipments, track deliveries, and connect with transport providers.',
+      'Designed and implemented robust backend APIs using Node.js and Express, handling authentication, shipment workflows, and real-time updates.',
+      'Collaborated on frontend development using React and Tailwind CSS to deliver responsive and user-friendly interfaces.',
+      'Implemented database architecture using MongoDB to efficiently manage users, orders, and logistics data.',
+      'Worked closely with stakeholders to refine requirements, improve system performance, and ensure smooth deployment of features.',
+    ],
+  },
+  {
+    review:
+      'Sharaf delivered a high-quality AI-powered platform with strong technical expertise, clear communication, and reliable project leadership.',
+    link: 'https://www.rawasidesign.sa/',
+    imgPath: '/images/logos/Rawas-logo.png',
+    logoPath: '/images/logos/Rawas-logo.png',
+    title: 'Rawas Al-Mamlaka - Fullstack Developer (Freelancing)',
+    date: 'November 2025 - January 2026',
+    responsibilities: [
+      'Led the development of an AI-powered architectural design platform that generates Saudi region–based building concepts from user inputs',
+      'Integrated OpenAI Vision models to analyze building images, detect architectural elements, and evaluate regional design compliance.',
+      'Designed scalable backend APIs and database architecture using Next.js, Prisma ORM,and MongoDB to manage users, designs, and analysis data.',
+      'Managed project workflow and development lifecycle as Project Leader, coordinating features, architecture decisions, and delivery milestones.',
     ],
   },
   {
     review:
       'Sharaf brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.',
+    link: 'https://lgpms.co.uk/',
+    imgPath: '/images/Picture1.png',
+    logoPath: '/images/logo11.png',
+    title: 'LGPMS - Fullstack Developer (Freelance)',
+    date: 'January 2025 - May 2025',
+    responsibilities: [
+      'Developed and maintained responsive, user-friendly features for the LGPMS client website and Admin dashboard using React.js and Tailwind CSS to enhance customer experience for service bookings and vehicle rentals.',
+      'Implemented an admin panel to efficiently manage bookings and daily operations.',
+      'Designed and implemented backend models and RESTful API routes using Node.js and Express.js for core features such as vehicles and bookings.',
+      'Wrote end-to-end tests using Cypress, ensuring reliability and stability of key user flows and reducing regression bugs by 30% across deployments.',
+    ],
+  },
+  {
+    review:
+      'Sharaf brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.',
+    link: 'https://msuprep-frontend.vercel.app/',
     imgPath: '/images/MSUPREP1.png',
     logoPath: '/images/MSUPREP-logo.png',
     title: 'Fullstack Developer (Project)',
@@ -180,12 +213,13 @@ const expCards = [
     responsibilities: [
       'Built a platform to help students findprevious years’ exampapersefficiently.',
       'Developed a group project feature enabling students to collaborate on final year projects.',
-      'Designed tools for teachers to track and monitor student progress seamlessly.',    
+      'Designed tools for teachers to track and monitor student progress seamlessly.',
     ],
   },
   {
     review:
       'The pyhton projects reflect well-rounded technical skills and a creative application of algorithms to practical problems.',
+    link: '',
     imgPath: '/images/python.svg',
     logoPath: '/images/python.png',
     title: 'Python (Project)',
