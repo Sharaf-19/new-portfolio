@@ -155,6 +155,45 @@ const techStackIcons: {
   },
 ];
 
+export const workCards = [
+  {
+    title: 'Tramove Logistics',
+    imgPath: '/images/tramove.png',
+    url: 'https://tramove.net/',
+    bgColor: '#e63946',
+    description:
+      'Tramove Logistics is a comprehensive web platform based in Ghana built using the MERN stack (MongoDB, Express.js, React.js, Node.js) designed to streamline shipment management and delivery tracking. The system includes a client-facing website for users to create shipments, track deliveries in real-time, and connect with transport providers, along with a robust admin panel to efficiently manage shipments, calculate dynamic pricing, handle logistics operations, and maintain records of users, orders, and deliveries.',
+  },
+  {
+    title: 'Rawas Al-Mamlaka',
+    imgPath: '/images/rawas.png',
+    url: 'https://www.rawasidesign.sa/',
+    bgColor: '#31be97',
+    description: '',
+  },
+  {
+    title: 'LGPMS',
+    imgPath: '/images/LGPMS1.png',
+    url: 'https://lgpms.co.uk/',
+    bgColor: '#e63946',
+    description: '', //LGPMS is a comprehensive web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) designed to enable customers to book services and rent vehicles or machinery. The system includes both a client-facing website and a robust admin panel to efficiently manage bookings, service records, rental inquiries, generate invoices and client interactions.,
+  },
+  {
+    title: 'MSUPREP',
+    imgPath: '/images/MSUPREP.png',
+    url: 'https://msuprep-frontend.vercel.app/',
+    bgColor: '#ffefdb',
+    description: null,
+  },
+  // {
+  //   title: 'BookShelf Store',
+  //   imgPath: '/images/BookShelf.png',
+  //   url: null, // no link yet
+  //   bgColor: '#ffe7eb',
+  //   description: null,
+  // },
+];
+
 const expCards = [
   {
     review:
